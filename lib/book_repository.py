@@ -13,7 +13,7 @@ class BookRepository:
         # SELECT id, name, author_name FROM book_store;
 
         # Returns an array of Book objects.
-        rows = self._connection.execute("SELECT * from books")
+        rows = self._connection.execute("SELECT * from books1")
         books = []
         for row in rows:
             item = Books(row["id"], row["title"], row["author_name"])
